@@ -11,6 +11,7 @@
 * Será retornado um JSON com os códigos ISBN dos 10 livros mais recomendados
 
 ### Como utilizar a API - V2 (Collaborative Filtering)
+* Baixe o arquivo [filtering_recommendation.csv](https://drive.google.com/file/d/1EUAs1wKWLhOyqRibDfLQ7PI77kjyWzDI/view?usp=sharing) e o cole em ...\Sistema-Recomendacao_Livros\api\v2\ (não o coloquei no Git pois possui 380 MB)
 * Após a instalação da distribuição Anaconda execute, no diretório raíz da **API**, o comando `python apiV2.py`. Atentesse para a versão da API.
 * Em seguida execute em seu navegador o aquivo testAPI.html
 * No campo "Enter User", informe um ID de usuário contido no arquivo filtering_recommendation.csv. Exemplos de códigos válidos: 242, 388, 446, 643.
