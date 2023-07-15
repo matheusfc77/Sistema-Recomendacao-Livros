@@ -1,18 +1,19 @@
-# Sistema de Recomendação de Livros
-## Projeto de Engenharia de Software do curso de Ciência da Computação - IFC (2021)
+# Book Recommendation System
+Project to recommend books using different approaches
 
-### Distribuições / bibliotecas necessárias
+### Important libs
 * [Anaconda](https://www.anaconda.com/products/individual)
 
-### Como utilizar a API - V1 (Content-Based Filtering)
-* Após a instalação da distribuição Anaconda execute, no diretório raíz da **API**, o comando `python apiV1.py`. Atentesse para a versão da API.
-* Em seguida execute em seu navegador o aquivo testAPI.html
-* No campo "Enter Book", informe um código ISBN contido no arquivo clean_books.csv. Exemplos de códigos válidos: 0002005018, 1841721522, 0553294385.
-* Será retornado um JSON com os códigos ISBN dos 10 livros mais recomendados
+### V1 - Content-Based Filtering
+* After installation of Anaconda execute in the API root path the command `python apiV1.py`
+* Run in your laptop the file testAPI.html
+* In “Enter Book”, inform a ISBN code (examples in clean_books.csv). Some valid codes: 0002005018, 1841721522, 0553294385
+* It will be return a JSON with the ISBN of the top 10 books
 
-### Como utilizar a API - V2 (Collaborative Filtering)
-* Baixe o arquivo [filtering_recommendation.csv](https://drive.google.com/file/d/1EUAs1wKWLhOyqRibDfLQ7PI77kjyWzDI/view?usp=sharing) e o cole em ...\Sistema-Recomendacao_Livros\api\v2\ (não o coloquei no Git pois possui 380 MB)
-* Após a instalação da distribuição Anaconda execute, no diretório raíz da **API**, o comando `python apiV2.py`. Atentesse para a versão da API.
-* Em seguida execute em seu navegador o aquivo testAPI.html
-* No campo "Enter User", informe um ID de usuário contido no arquivo filtering_recommendation.csv. Exemplos de códigos válidos: 242, 388, 446, 643.
-* Será retornado um JSON com os códigos ISBN dos 10 livros mais recomendados
+
+### V2 - Collaborative Filtering
+* Download  [filtering_recommendation.csv](https://drive.google.com/file/d/1EUAs1wKWLhOyqRibDfLQ7PI77kjyWzDI/view?usp=sharing) and paste in ...\Sistema-Recomendacao_Livros\api\v2\ (the file have 380 MB)
+* After installation of Anaconda execute in the API root path the command `python apiV2.py`
+* Run in your laptop the file testAPI.html
+* In “Enter User”, inform a user ID (examples in filtering_recommendation.csv). Some valid codes: 242, 388, 446, 643
+* It will be return a JSON with the ISBN of the top 10 books
